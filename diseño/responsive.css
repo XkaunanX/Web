@@ -1,0 +1,121 @@
+/* Diseño básico con CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 columna para la barra lateral y 3 para el contenido principal */
+    grid-template-rows: auto 1fr auto; /* Fila de encabezado, contenido y pie de página */
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+}
+
+.main {
+    grid-area: main;
+    background-color: #eaeaea;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+}
+
+/* Hacerlo responsivo con un solo cambio en el grid */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Colocar todo en una columna */
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+}
+
+/* Diseño básico con Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 20px;
+}
+
+.flex-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex-grow: 1; /* Hace que los elementos se estiren para ocupar el espacio disponible */
+}
+
+/* Hacerlo responsivo: apilar los elementos verticalmente */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: stretch; /* Los elementos ocuparán todo el ancho disponible */
+    }
+}
+
+/* Diseño Mobile-First */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+/* Estilos para pantallas de 768px o menos (móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header, footer {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Para pantallas más grandes, a partir de 769px */
+@media (min-width: 769px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    header, footer {
+        padding: 2rem 4rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

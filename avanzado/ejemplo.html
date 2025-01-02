@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Interactivos Avanzados con JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">  <!-- Vinculamos el archivo CSS externo -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ejemplos Interactivos Avanzados con JavaScript</h1>
+    </header>
+
+    <!-- Event Handling Example -->
+    <section>
+        <h2>Manejo de Eventos Complejo</h2>
+        <button id="colorToggleBtn">Cambiar Color de Fondo</button>
+        <button id="resizeTextBtn">Ajustar Tamaño de Texto</button>
+        <button id="showAlertBtn">Mostrar Alerta Personalizada</button>
+    </section>
+
+    <!-- Modal Example -->
+    <section>
+        <h2>Modales Interactivos</h2>
+        <button id="openModalBtn">Abrir Modal</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close">&times;</span>
+                <h2>Modal con Transición</h2>
+                <p>Contenido del modal, incluyendo animaciones con CSS.</p>
+                <button id="confirmModalBtn">Confirmar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Transitions -->
+    <section>
+        <h2>Transiciones Avanzadas</h2>
+        <div id="transitionBox" class="transition-box">
+            <p>Pasa el ratón por encima de este bloque para ver una animación avanzada.</p>
+        </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+        <h2>Validación Dinámica del Formulario</h2>
+        <form id="contactForm">
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+            <p id="formError" class="error-message"></p>
+        </form>
+    </section>
+
+    <!-- JavaScript: Events, Modals, Transitions, Validation -->
+    <script src="events.js"></script>
+    <script src="modals.js"></script>
+    <script src="transitions.js"></script>
+    <script src="validation.js"></script>
+    
+</body>
+</html>

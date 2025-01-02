@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de API y Datos</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de Carga Dinámica, JSON y Almacenamiento Local</h1>
+    </header>
+
+    <!-- AJAX: Carga Dinámica -->
+    <section id="dynamicContent">
+        <h2>Carga Dinámica de Contenido con AJAX</h2>
+        <button id="loadContentBtn">Cargar Contenido</button>
+        <div id="content"></div>
+    </section>
+
+    <!-- Sección de carga dinámica con Fetch -->
+    <section id="fetchContent">
+        <h2>Carga Asíncrona de Datos con Fetch (Cargando de manera continua)</h2>
+        <button id="loadFetchContentBtn">Cargar Datos Continuos</button>
+        <!-- Contenedor donde se agregará la tabla con los datos -->
+        <div id="fetchContentOutput">
+            <!-- Aquí se generará la tabla y los datos a medida que se cargan -->
+        </div>
+    </section>
+
+    <!-- Manejo de Errores -->
+    <section id="errorHandling">
+        <h2>Manejo de Errores HTTP</h2>
+        <button id="loadErrorBtn">Probar Error HTTP</button>
+        <div id="errorContent"></div>
+    </section>
+
+    <!-- Manipulación de JSON -->
+    <section id="jsonContent">
+        <h2>Manipulación y Parseo de JSON</h2>
+        <button id="loadJsonContentBtn">Cargar Contenido desde JSON</button>
+        <div id="jsonContentOutput"></div>
+    </section>
+
+    <!-- Almacenamiento Local -->
+    <section id="localStorageContent">
+        <h2>Uso del Almacenamiento Local</h2>
+        <label for="name">Ingresa tu nombre:</label>
+        <input type="text" id="name" name="name">
+        <button id="saveBtn">Guardar Nombre</button>
+        <div id="greeting"></div>
+    </section>
+
+    <script src="ajax.js"></script> <!-- Enlace al archivo de AJAX -->
+    <script src="fetch-api.js"></script> <!-- Enlace al archivo de Fetch -->
+    <script src="error-handling.js"></script> <!-- Enlace al archivo de Manejo de Errores -->
+    <script src="json.js"></script> <!-- Enlace al archivo de JSON -->
+    <script src="local-storage.js"></script> <!-- Enlace al archivo de Almacenamiento Local -->
+</body>
+</html>

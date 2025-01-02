@@ -1,0 +1,38 @@
+/* Transición suave para todos los elementos */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Animación para hacer que un elemento aparezca */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animación para mover un elemento hacia la derecha */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-right {
+    animation: slideRight 0.5s ease-in-out;
+}
+
+/* Efecto hover para botones */
+button:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}

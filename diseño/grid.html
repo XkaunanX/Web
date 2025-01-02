@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con CSS Grid</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="motion.css">
+    <link rel="stylesheet" href="themes.css">
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Ejemplo de Diseño con CSS Grid</h1>
+    </header>
+
+    <div class="grid-container slide-right">
+        <div class="grid-item header">Encabezado</div>
+        <div class="grid-item sidebar">Barra lateral</div>
+        <div class="grid-item main">Contenido Principal</div>
+        <div class="grid-item footer">Pie de Página</div>
+    </div>
+
+    <footer class="fade-in">
+        <p>&copy; 2024 Mi Página</p>
+    </footer>
+
+    <button class="fade-in" onclick="toggleTheme()">Cambiar Tema</button>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? '' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>
+

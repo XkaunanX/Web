@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+#dynamicContent, #errorHandling, #jsonContent, #localStorageContent {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#greeting {
+    margin-top: 20px;
+}
+
+/* Sección de la tabla */
+#fetchContent table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#fetchContent th, #fetchContent td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+#fetchContent th {
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Una página de ejemplo para mostrar todas las etiquetas HTML posibles, formularios y validación.">
+    <meta name="keywords" content="HTML, etiquetas, metadatos, formulario, validación">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejemplo Completo de HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Bienvenido al Ejemplo Completo de HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Sección 1</a></li>
+                <li><a href="#section2">Sección 2</a></li>
+                <li><a href="#form">Formulario</a></li>
+                <li><a href="#media">Medios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section id="section1">
+            <h2>Sección 1: Estructura Básica</h2>
+            <p>HTML es el lenguaje básico para estructurar páginas web. Aquí mostramos algunas etiquetas comunes:</p>
+            <article>
+                <h3>Artículo en HTML</h3>
+                <p>Este es un artículo de ejemplo para mostrar el uso de la etiqueta <code>&lt;article&gt;</code>.</p>
+            </article>
+
+            <aside>
+                <h4>Contenido adicional</h4>
+                <p>Este es un <code>&lt;aside&gt;</code> con contenido relacionado pero no esencial.</p>
+            </aside>
+        </section>
+
+        <section id="section2">
+            <h2>Sección 2: Listas y Tablas</h2>
+            <p>Ejemplos de listas:</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <p>Ejemplo de lista ordenada:</p>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+                <li>Tercer paso</li>
+            </ol>
+            <p>Ejemplo de tabla:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>34</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Botones de interacción con JavaScript -->
+        <section id="interactions">
+            <h2>Manipulaciones con JavaScript</h2>
+            <button onclick="changeBackgroundColor()">Cambiar color de fondo</button>
+            <button onclick="showAlert()">Mostrar alerta</button>
+            <button onclick="changeTextContent()">Cambiar texto del título</button>
+        </section>
+
+        <!-- Formulario de contacto con validación -->
+        <section id="form">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm" action="/submit" method="POST" onsubmit="return validateForm()">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formMessage" style="color:red;"></p>
+        </section>
+
+        <!-- Sección Canvas, SVG y Medios -->
+        <section id="media">
+            <h2>Canvas, SVG y Medios</h2>
+            <p>Un canvas para gráficos:</p>
+            <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+            <p>Gráfico SVG:</p>
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+
+            <p>Audio:</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <p>Video:</p>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+
+            <!-- Ejemplo de etiqueta de imagen -->
+            <p>Imagen de ejemplo:</p>
+            <img src="imagen.jpg" alt="Imagen de ejemplo" width="300" height="200">
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

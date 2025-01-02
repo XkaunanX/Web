@@ -125,3 +125,25 @@ Este código indica que el servidor no está disponible temporalmente, generalme
 
 ### 504 Gateway Timeout
 Este código se utiliza cuando un servidor intermedio (como un proxy) no recibe una respuesta a tiempo de un servidor de origen mientras intentaba completar una solicitud.
+
+# ¿Qué son los CDN?
+
+Un **CDN (Content Delivery Network)**, o Red de Entrega de Contenidos, es una infraestructura de servidores distribuidos geográficamente que trabajan juntos para entregar contenido a los usuarios de manera más rápida y eficiente. El objetivo principal de un CDN es reducir el tiempo de carga de los sitios web y mejorar la experiencia del usuario al proporcionar contenido desde servidores cercanos a su ubicación.
+
+## ¿Cómo funcionan los CDN?
+
+Los CDN funcionan almacenando copias de contenido estático de un sitio web, como imágenes, archivos de JavaScript, CSS, videos, y otros recursos, en múltiples servidores ubicados en diferentes partes del mundo. Estos servidores, conocidos como **nodos** o **puntos de presencia (PoPs)**, distribuyen el contenido a los usuarios según su ubicación geográfica.
+
+Cuando un usuario solicita un recurso, el CDN determina el servidor más cercano para entregar el contenido. Esto reduce la latencia y mejora la velocidad de carga, ya que el servidor más cercano puede entregar los archivos más rápidamente que si se tuvieran que obtener desde un servidor central ubicado lejos.
+
+## Ventajas de los CDN
+
+1. **Mejor rendimiento**: Al distribuir el contenido desde múltiples ubicaciones, los CDN pueden reducir significativamente los tiempos de carga de las páginas web.
+   
+2. **Escalabilidad**: Los CDN permiten manejar un gran volumen de tráfico al distribuir la carga entre muchos servidores, lo que es útil especialmente para sitios web con altos niveles de visitantes.
+
+3. **Disponibilidad y fiabilidad**: Si un servidor de un CDN se cae, el tráfico puede ser redirigido a otros servidores cercanos, lo que garantiza la disponibilidad del contenido.
+
+4. **Reducción del ancho de banda**: Al almacenar contenido en caché y servirlo desde los nodos cercanos, los CDN ayudan a reducir el uso de ancho de banda en los servidores de origen.
+
+5. **Seguridad mejorada**: Los CDN ofrecen funcionalidades de seguridad como protección contra ataques DDoS (Distributed Denial of Service), mitigación de tráfico malicioso y cifrado HTTPS.
